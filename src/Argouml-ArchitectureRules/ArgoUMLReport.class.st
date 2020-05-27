@@ -18,7 +18,12 @@ ArgoUMLReport class >> onModel: aModel [
 ArgoUMLReport >> build: aComposite [
 	aComposite name: 'ArgoUML Report'.
 	aComposite
-		addConstraint: (ArgoUMLDeprecatedClassesWithNoDeprecatedClients new model: self model)
+		addConstraint: (ArgoUMLDeprecatedClassesWithNoDeprecatedClients new 
+			model: self model);
+		addConstraint: (ArgoUMLWidgetsInTheWrongPackages new 
+			model: self model);
+		addConstraint: (ArgoUMLInvalidUMLModulesDependencies new 
+			model: self model)
 
 ]
 

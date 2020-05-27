@@ -21,5 +21,10 @@ ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> issues [
 
 { #category : #accessing }
 ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> name [
-	^ 'ArgoUML deprecated classes with no deprecated clients'
+	^ 'Deprecated classes with no deprecated clients'
+]
+
+{ #category : #accessing }
+ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> stakeholder [
+  ^ ArgoUMLConstraintStakeholder developmentTeam
 ]

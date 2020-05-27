@@ -13,6 +13,6 @@ ArgoUMLConstraint >> model [
 ]
 
 { #category : #accessing }
-ArgoUMLConstraint >> model: anObject [
-	model := anObject
+ArgoUMLConstraint >> model: aModel [
+	model := aModel
 ]
