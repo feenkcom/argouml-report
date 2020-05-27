@@ -13,7 +13,7 @@ ArgoUMLInvalidUMLModulesDependencies >> description [
 ArgoUMLInvalidUMLModulesDependencies >> issues [
 	|modulesNames modulesPackages modulesByName allInvalidDependencies|
 	 modulesNames := #('cpp' 'csharp' 'java' 'php' 'sql').
-	 modulesPackages := model allModelNamespaces select: [:aNamespace |
+	 modulesPackages := self model allModelNamespaces select: [:aNamespace |
 		| fullName |
 		fullName := aNamespace mooseName.
 		modulesNames anySatisfy: [ :moduleName |

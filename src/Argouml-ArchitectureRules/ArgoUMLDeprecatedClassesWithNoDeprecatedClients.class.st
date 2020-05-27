@@ -28,3 +28,8 @@ ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> name [
 ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> stakeholder [
   ^ ArgoUMLConstraintStakeholder developmentTeam
 ]
+
+{ #category : #accessing }
+ArgoUMLDeprecatedClassesWithNoDeprecatedClients >> status [ 
+	^ GtNeutralConstraintStatus new
+]

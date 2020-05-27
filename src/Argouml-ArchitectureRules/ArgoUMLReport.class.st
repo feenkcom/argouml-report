@@ -33,6 +33,6 @@ ArgoUMLReport >> model [
 ]
 
 { #category : #accessing }
-ArgoUMLReport >> model: anObject [
-	model := anObject
+ArgoUMLReport >> model: aModel [
+	model := aModel
 ]
